@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "08091d09-8f5c-4776-a4b1-056898dbff6b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20362145",
+		"_collection_link": "https://interns-2022.postman.co/workspace/New-Team-Workspace~c3be57a8-934c-4c25-b017-c07020f37612/collection/20362145-08091d09-8f5c-4776-a4b1-056898dbff6b?action=share&creator=20362145&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "list users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user details from uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMwNTgwLCJpYXQiOjE2ODU1MjY5ODAsImp0aSI6IjZkYjQ0N2U1MThhZTRkMzI5NmE0OTdiZWRlMzRhMTUxIiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.j8p2fEKJgpj9dbfgkWfNKQAq3Ju3xtOBCqLyOQ1-wkQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/users/99cd823f-bf2c-466b-9f7b-52e51ef46a05/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"99cd823f-bf2c-466b-9f7b-52e51ef46a05",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list blogs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blog details from uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs/c410bf7a-652f-45df-af87-84b550fd5a57/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"c410bf7a-652f-45df-af87-84b550fd5a57",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list likes of blog",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs-like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs-like",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gettoken from email and password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "admin@yopmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user1@yopmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/gettoken/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"gettoken",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a new user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMwNTgwLCJpYXQiOjE2ODU1MjY5ODAsImp0aSI6IjZkYjQ0N2U1MThhZTRkMzI5NmE0OTdiZWRlMzRhMTUxIiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.j8p2fEKJgpj9dbfgkWfNKQAq3Ju3xtOBCqLyOQ1-wkQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "user2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "user2@yopmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a new blog",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTI2Nzk4LCJpYXQiOjE2ODU1MjY0OTgsImp0aSI6ImNiODc1Yzg4YmRiZjRmMWU4YmM0MmM2ZmY0MzM5Y2VjIiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.RkSt67yrz8baF_6Q44aPcHHfNgoUYPR7H51rmyYwQhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "author",
+							"value": "f8969bed-09d0-48c5-902d-eebb9a651b8c",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "blog 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "desc 1",
+							"type": "text"
+						},
+						{
+							"key": "content ",
+							"value": "content 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a new like",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "blog",
+							"value": "c410bf7a-652f-45df-af87-84b550fd5a57",
+							"type": "text"
+						},
+						{
+							"key": "liked_by",
+							"value": "f8969bed-09d0-48c5-902d-eebb9a651b8c",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs-like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs-like",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a user by uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "user1 updated",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "user1@yopmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "is_active",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/users/f8969bed-09d0-48c5-902d-eebb9a651b8c/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"f8969bed-09d0-48c5-902d-eebb9a651b8c",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a blog by uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "title updated",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs/c410bf7a-652f-45df-af87-84b550fd5a57/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"c410bf7a-652f-45df-af87-84b550fd5a57",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a user by uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/users/99cd823f-bf2c-466b-9f7b-52e51ef46a05/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"99cd823f-bf2c-466b-9f7b-52e51ef46a05",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a blog by uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs/c410bf7a-652f-45df-af87-84b550fd5a57/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"c410bf7a-652f-45df-af87-84b550fd5a57",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a liked blog by uuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1NTMxMDYwLCJpYXQiOjE2ODU1Mjc0NjAsImp0aSI6IjkzM2JmNmNhNmEzYzQyZjBiZGQ2ZDUwMzU3NDM5MjQ1IiwidXNlcl9pZCI6ImY4OTY5YmVkLTA5ZDAtNDhjNS05MDJkLWVlYmI5YTY1MWI4YyJ9.BVAJR453mVpdYaVdxgk1TKezpjlacHr7UHSECL2PNr4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/blogs-like/2f3873aa-b055-4ead-b216-aabd61fe75eb/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"blogs-like",
+						"2f3873aa-b055-4ead-b216-aabd61fe75eb",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
