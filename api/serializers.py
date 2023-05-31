@@ -20,6 +20,12 @@ class BlogsModelSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class UserSubDetailsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["id", "username", "email", "is_staff", "is_superuser", "is_active"]
+
+
 class UserSubSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -31,9 +37,17 @@ class BlogsSubModelSerializer(serializers.ModelSerializer):
     author = UserSubSerializer()
 
     def get_total_likes(self, obj):
-        queryset = Blogslike.objects.filter(post=obj)
+        queryset = Blogslike.objects.filter(blog=obj)
         return len(queryset)
 
     class Meta:
         model = Blog
-        fields = ["id", "author", "title", "description", "content", "total_likes"]
+        fields = [
+            "id",
+            "author",
+            "title",
+            "description",
+            "content",
+            "is_private",
+            "total_likes",
+        ]
